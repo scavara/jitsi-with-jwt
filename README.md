@@ -1,11 +1,12 @@
-# jitsi-with-jwt (not completed nor fully tested!)
+# jitsi-with-jwt
 Docker container for setting up jitsi meet with jwt token authentication 
- - git clone
- - cd jitsi-with-jwt
+ - ```git clone https://github.com/scavara/jitsi-with-jwt.git && cd jitsi-with-jwt```
  - populate with right files (certs, favicon and watermark) and edit ENVS and top portion of Dockerfile accordingly 
- - build image
+ - build image 
+ ```docker build -t jitsi-with-jwt:1.0 .```
  - run container with -it
- - within container run /run.sh and cross  your fingers.
+ ```docker run --rm -it --net=host --hostname=example.com --name=jitsi-with-jwt --env-file=ENVS jitsi-with-jwt:1.0```
+ - within container run /run.sh and cross your fingers.
  
 Hostory dump for setting up jwt tokens - php example
  ```
@@ -39,3 +40,4 @@ Hostory dump for setting up jwt tokens - php example
  ?>
  $ php jwtgen.php 
  ```
+

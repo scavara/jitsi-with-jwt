@@ -10,10 +10,11 @@ JIGASISIPPWDBASE64=c29tZV9zaXBfcHdk
 JIGASISIPSERVER=somesipserver.at.example.com
 JIGASISECRET=some_random_string4
 JIGASILOCALUSER=siptestuser
-JIGASILOCALPASSWORD=siptestpassword
 CA=/etc/ssl/CA.crt   
 KEY=/etc/ssl/private/example.com.key 
 CRT=/etc/ssl/certs/example.com.crt
 #see prosody's example.com.lua.cfg
 APPID=your_app_id
 APPSECRET=your_app_secret
+LASTN=5
+DEFAULTROOM=defaultroom
